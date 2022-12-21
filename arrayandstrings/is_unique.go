@@ -17,9 +17,7 @@ func IsUnique(str string) bool {
 	}
 
 	// Sort the array
-	sort.Slice(arr, func(i, j int) bool {
-		return i < j
-	})
+	sort.Ints(arr)
 
 	for i := 0; (i + 1) < len(arr); i++ {
 		if arr[i] == arr[i+1] {
